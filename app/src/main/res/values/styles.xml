@@ -1,0 +1,26 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="SpinnerTheme" parent="Widget.AppCompat.Spinner">
+        <item name="android:textSize">@dimen/font_size_regular</item>
+        <item name="android:textColor">@color/fontColorLight</item>
+        <item name="android:padding">@dimen/edit_text_padding</item>
+        <item name="android:background">@drawable/spinner_bg</item>
+    </style>
+
+    <style name="BtnStyle" parent="Widget.AppCompat.Button">
+        <item name="android:textSize">@dimen/font_size_regular</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:background">@drawable/btn_green_dark_bg</item>
+        <item name="android:padding">@dimen/edit_text_padding</item>
+    </style>
+
+
+</resources>
