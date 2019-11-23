@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="font_size_regular">13sp</dimen>
-    <dimen name="font_size_large">20dp</dimen>
+    <dimen name="font_size_large">20sp</dimen>
     <dimen name="landing_text_view_width">213dp</dimen>
     <dimen name="btn_width">201dp</dimen>
     <dimen name="default_padding">8dp</dimen>
