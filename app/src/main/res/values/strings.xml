@@ -28,4 +28,7 @@
     <string name="articles">Articles</string>
     <string name="featured_books">Featured books!</string>
     <string name="calendar">calendar</string>
+    <string name="notifications">Notifications</string>
+    <string name="get_help">Get Help</string>
+    <string name="image">image</string>
 </resources>
