@@ -17,7 +17,7 @@
             android:layout_height="wrap_content">
 
             <ImageView
-                android:id="@+id/article_image"
+                android:id="@+id/book_image"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
@@ -29,41 +29,41 @@
                 app:srcCompat="@drawable/avater" />
 
             <TextView
-                android:id="@+id/article_date"
+                android:id="@+id/book_date"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="24dp"
                 android:layout_marginEnd="32dp"
                 android:text="TextView"
-                app:layout_constraintBottom_toTopOf="@+id/article_title"
+                app:layout_constraintBottom_toTopOf="@+id/book_title"
                 app:layout_constraintEnd_toStartOf="@+id/imageView2"
                 app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toEndOf="@+id/article_image"
+                app:layout_constraintStart_toEndOf="@+id/book_image"
                 app:layout_constraintTop_toTopOf="@+id/imageView2" />
 
             <TextView
-                android:id="@+id/article_title"
+                android:id="@+id/book_title"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:text="TextView"
                 android:textColor="@color/fontColor"
-                app:layout_constraintBottom_toTopOf="@+id/article_author"
-                app:layout_constraintEnd_toEndOf="@+id/article_date"
+                app:layout_constraintBottom_toTopOf="@+id/book_author"
+                app:layout_constraintEnd_toEndOf="@+id/book_date"
                 app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toStartOf="@+id/article_date"
-                app:layout_constraintTop_toBottomOf="@+id/article_date" />
+                app:layout_constraintStart_toStartOf="@+id/book_date"
+                app:layout_constraintTop_toBottomOf="@+id/book_date" />
 
             <TextView
-                android:id="@+id/article_author"
+                android:id="@+id/book_author"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:textColor="@color/errorColor"
                 app:layout_constraintBottom_toBottomOf="@+id/imageView2"
-                app:layout_constraintEnd_toEndOf="@+id/article_title"
+                app:layout_constraintEnd_toEndOf="@+id/book_title"
                 app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toStartOf="@+id/article_title"
-                app:layout_constraintTop_toBottomOf="@+id/article_title"
+                app:layout_constraintStart_toStartOf="@+id/book_title"
+                app:layout_constraintTop_toBottomOf="@+id/book_title"
                 tools:text="author" />
 
             <ImageView

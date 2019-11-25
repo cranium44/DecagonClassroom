@@ -46,10 +46,10 @@ class ArticleAdapter : RecyclerView.Adapter<ArticleAdapter.ArticleViewHolder>() 
         var articleImage: ImageView
 
         init {
-            articleDate = view.findViewById(R.id.article_date)
-            articleTitle = view.findViewById(R.id.article_title)
-            articleAuthor = view.findViewById(R.id.article_author)
-            articleImage = view.findViewById(R.id.article_image)
+            articleDate = view.findViewById(R.id.book_date)
+            articleTitle = view.findViewById(R.id.book_title)
+            articleAuthor = view.findViewById(R.id.book_author)
+            articleImage = view.findViewById(R.id.book_image)
         }
     }
 
