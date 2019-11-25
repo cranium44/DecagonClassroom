@@ -1,4 +1,4 @@
-package com.decagon.decagonclassroom
+package com.decagon.decagonclassroom.views.adapters
 
 import android.util.Log
 import android.view.LayoutInflater
@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.decagon.decagonclassroom.R
 import com.decagon.decagonclassroom.models.Article
 
 class ArticleAdapter : RecyclerView.Adapter<ArticleAdapter.ArticleViewHolder>() {
@@ -58,7 +59,9 @@ class ArticleAdapter : RecyclerView.Adapter<ArticleAdapter.ArticleViewHolder>() 
     ): ArticleViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.article_row, parent, false)
         Log.e("Adapter", "recyclerview created")
-        return ArticleViewHolder(view)
+        return ArticleViewHolder(
+            view
+        )
     }
 
     override fun getItemCount(): Int {

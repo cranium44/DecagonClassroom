@@ -1,4 +1,4 @@
-package com.decagon.decagonclassroom
+package com.decagon.decagonclassroom.views
 
 
 import android.os.Bundle
@@ -8,6 +8,8 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.decagon.decagonclassroom.R
+import com.decagon.decagonclassroom.views.adapters.ArticleAdapter
 
 /**
  * A simple [Fragment] subclass.
@@ -23,7 +25,8 @@ class HomeFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_home, container, false)
-        articleAdapter = ArticleAdapter()
+        articleAdapter =
+            ArticleAdapter()
         layoutManager = LinearLayoutManager(this.activity!!.applicationContext)
         recyclerView = view.findViewById(R.id.recyclerViewArticles)
         recyclerView.adapter = articleAdapter
