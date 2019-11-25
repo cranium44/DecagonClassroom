@@ -33,4 +33,6 @@
     <string name="image">image</string>
     <string name="videos">Videos</string>
     <string name="books">Books</string>
+    <string name="resources">Resources</string>
+    <string name="filter">filter</string>
 </resources>
