@@ -18,19 +18,29 @@
             app:layout_constraintTop_toTopOf="@+id/guideline5">
 
             <com.google.android.material.tabs.TabItem
+                android:id="@+id/article_tab_item"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Monday" />
+                android:text="@string/articles">
+
+            </com.google.android.material.tabs.TabItem>
 
             <com.google.android.material.tabs.TabItem
+                android:id="@+id/book_tab_item"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Tuesday" />
+                android:text="@string/books">
+
+            </com.google.android.material.tabs.TabItem>
 
             <com.google.android.material.tabs.TabItem
+                android:id="@+id/videos_tab_item"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Wednesday" />
+                android:text="@string/videos">
+
+            </com.google.android.material.tabs.TabItem>
+
         </com.google.android.material.tabs.TabLayout>
 
         <androidx.constraintlayout.widget.Guideline
