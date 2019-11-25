@@ -22,5 +22,13 @@
         <item name="android:padding">@dimen/edit_text_padding</item>
     </style>
 
+    <style name="SearchBar" parent="Widget.AppCompat.EditText">
+        <item name="android:background">@drawable/search_bg</item>
+        <item name="android:padding">@dimen/edit_text_padding</item>
+        <item name="android:hint">Search...</item>
+        <item name="android:textColorHint">@color/colorPrimary</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
 
 </resources>

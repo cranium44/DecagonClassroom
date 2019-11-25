@@ -1,20 +1,55 @@
 package com.decagon.decagonclassroom
 
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.decagon.decagonclassroom.models.Article
 
 class ArticleAdapter : RecyclerView.Adapter<ArticleAdapter.ArticleViewHolder>() {
-//    var data = ArrayList<>()
+    private var data = arrayListOf(
+        Article(
+            "Eloquent Js",
+            "Chigozie Asadu"
+        ),
+        Article(
+            "Eloquent Js",
+            "Chigozie Asadu"
+        ),
+        Article(
+            "Eloquent Js",
+            "Chigozie Asadu"
+        ),
+        Article(
+            "Eloquent Js",
+            "Chigozie Asadu"
+        ),
+        Article(
+            "Eloquent Js",
+            "Chigozie Asadu"
+        ),
+        Article(
+            "Eloquent Js",
+            "Chigozie Asadu"
+        )
+    )
+
 
     class ArticleViewHolder(view: View) : RecyclerView.ViewHolder(view) {
-        var articleDate: TextView = view.findViewById(R.id.article_date)
-        var articleTitle: TextView = view.findViewById(R.id.article_title)
-        var articleAuthor: TextView = view.findViewById(R.id.article_author)
-        var articleImage: ImageView = view.findViewById(R.id.article_image)
+        var articleDate: TextView
+        var articleTitle: TextView
+        var articleAuthor: TextView
+        var articleImage: ImageView
+
+        init {
+            articleDate = view.findViewById(R.id.article_date)
+            articleTitle = view.findViewById(R.id.article_title)
+            articleAuthor = view.findViewById(R.id.article_author)
+            articleImage = view.findViewById(R.id.article_image)
+        }
     }
 
     override fun onCreateViewHolder(
@@ -22,14 +57,21 @@ class ArticleAdapter : RecyclerView.Adapter<ArticleAdapter.ArticleViewHolder>() 
         viewType: Int
     ): ArticleViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.article_row, parent, false)
+        Log.e("Adapter", "recyclerview created")
         return ArticleViewHolder(view)
     }
 
     override fun getItemCount(): Int {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        return data.size
     }
 
+
     override fun onBindViewHolder(holder: ArticleViewHolder, position: Int) {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        val article = data[position]
+        holder.articleAuthor.text = article.author
+        holder.articleDate.text = "${article.date.time}"
+        holder.articleTitle.text = article.title
+
+        Log.d("Adapter", article.author)
     }
 }

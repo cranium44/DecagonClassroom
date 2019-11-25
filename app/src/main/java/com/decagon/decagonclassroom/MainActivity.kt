@@ -17,6 +17,8 @@ class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemS
         setContentView(R.layout.activity_main)
         val homeFragment = HomeFragment()
         val profileFragment = ProfileFragment()
+        val curriculumFragment = CurriculumFragment()
+        val resourcesFragment = ResourcesFragment()
 
         supportFragmentManager.beginTransaction()
             .replace(R.id.layout_fragment_container, homeFragment)
@@ -35,6 +37,18 @@ class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemS
                 R.id.profile_nav -> {
                     supportFragmentManager.beginTransaction()
                         .replace(R.id.layout_fragment_container, profileFragment)
+                        .commit()
+                    true
+                }
+                R.id.curriculum_nav -> {
+                    supportFragmentManager.beginTransaction()
+                        .replace(R.id.layout_fragment_container, curriculumFragment)
+                        .commit()
+                    true
+                }
+                R.id.resources_nav -> {
+                    supportFragmentManager.beginTransaction()
+                        .replace(R.id.layout_fragment_container, resourcesFragment)
                         .commit()
                     true
                 }
