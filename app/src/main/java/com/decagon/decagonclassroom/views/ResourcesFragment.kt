@@ -10,7 +10,6 @@ import androidx.viewpager.widget.ViewPager
 import com.decagon.decagonclassroom.R
 import com.decagon.decagonclassroom.views.adapters.PagerAdapter
 import com.google.android.material.tabs.TabLayout
-import kotlinx.android.synthetic.main.fragment_resources.*
 
 /**
  * A simple [Fragment] subclass.
@@ -23,10 +22,29 @@ class ResourcesFragment : Fragment() {
     ): View? {
         val view = inflater.inflate(R.layout.fragment_resources, container, false)
         val viewPager = view.findViewById<ViewPager>(R.id.frag_view_pager)
-        viewPager.adapter = PagerAdapter(fragmentManager!!, 3)
+        val tabLayout = view.findViewById<TabLayout>(R.id.resource_tab_layout)
+        viewPager.adapter = PagerAdapter(fragmentManager!!, tabLayout.tabCount)
+        tabLayout.addOnTabSelectedListener(object : TabLayout.OnTabSelectedListener {
+            override fun onTabReselected(p0: TabLayout.Tab?) {
+
+            }
+
+            override fun onTabUnselected(p0: TabLayout.Tab?) {
+
+            }
+
+            override fun onTabSelected(p0: TabLayout.Tab?) {
+                viewPager.currentItem = p0!!.position
+//                when(p0!!.position){
+//                    0 -> article_tab_item.isSelected = true
+//                    1 ->
+//                }
+            }
+
+        })
         viewPager.addOnPageChangeListener(
             TabLayout.TabLayoutOnPageChangeListener(
-                resource_tab_layout
+                tabLayout
             )
         )
         return view
