@@ -31,4 +31,6 @@
     <string name="notifications">Notifications</string>
     <string name="get_help">Get Help</string>
     <string name="image">image</string>
+    <string name="videos">Videos</string>
+    <string name="books">Books</string>
 </resources>
