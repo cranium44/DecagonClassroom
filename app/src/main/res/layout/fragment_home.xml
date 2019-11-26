@@ -12,7 +12,21 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <include layout="@layout/search_bar" />
+        <EditText
+            android:id="@+id/search_bar"
+            style="@style/SearchBar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            android:drawablePadding="4dp"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:showIn="@layout/fragment_home" />
 
         <androidx.viewpager.widget.ViewPager
             android:id="@+id/viewPager"

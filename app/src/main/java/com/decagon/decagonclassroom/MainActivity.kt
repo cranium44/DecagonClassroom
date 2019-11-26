@@ -3,9 +3,6 @@ package com.decagon.decagonclassroom
 import android.os.Bundle
 import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
-import androidx.navigation.findNavController
-import androidx.navigation.ui.AppBarConfiguration
-import androidx.navigation.ui.setupWithNavController
 import com.decagon.decagonclassroom.views.CurriculumFragment
 import com.decagon.decagonclassroom.views.HomeFragment
 import com.decagon.decagonclassroom.views.ProfileFragment
@@ -29,56 +26,56 @@ class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemS
             CurriculumFragment()
         val resourcesFragment =
             ResourcesFragment()
-        val navController = findNavController(R.id.layout_fragment_container)
-        val appBarConfiguration = AppBarConfiguration.Builder(
-            (mutableSetOf(
-                R.id.homeFragment,
-                R.id.curriculumFragment,
-                R.id.resourcesFragment,
-                R.id.profileFragment
-            ))
-        ).build()
+//        val navController = findNavController(R.id.layout_fragment_container)
+//        val appBarConfiguration = AppBarConfiguration.Builder(
+//            (mutableSetOf(
+//                R.id.homeFragment,
+//                R.id.curriculumFragment,
+//                R.id.resourcesFragment,
+//                R.id.profileFragment
+//            ))
+//        ).build()
 
 //        setupActionBarWithNavController(navController,appBarConfiguration)
-        bottom_navigation_view.setupWithNavController(navController)
+//        bottom_navigation_view.setupWithNavController(navController)
 
-//        supportFragmentManager.beginTransaction()
-//            .replace(R.id.layout_fragment_container, homeFragment)
-//            .commit()
-//        bottom_navigation_view.selectedItemId = R.id.home_nav
-//
-//
-//        bottom_navigation_view.setOnNavigationItemSelectedListener {
-//            when (it.itemId) {
-//                R.id.home_nav -> {
-//                    supportFragmentManager.beginTransaction()
-//                        .replace(R.id.layout_fragment_container, homeFragment)
-//                        .commit()
-//                    true
-//                }
-//                R.id.profile_nav -> {
-//                    supportFragmentManager.beginTransaction()
-//                        .replace(R.id.layout_fragment_container, profileFragment)
-//                        .commit()
-//                    true
-//                }
-//                R.id.curriculum_nav -> {
-//                    supportFragmentManager.beginTransaction()
-//                        .replace(R.id.layout_fragment_container, curriculumFragment)
-//                        .commit()
-//                    true
-//                }
-//                R.id.resources_nav -> {
-//                    supportFragmentManager.beginTransaction()
-//                        .replace(R.id.layout_fragment_container, resourcesFragment)
-//                        .commit()
-//                    true
-//                }
-//                else -> {
-//                    false
-//                }
-//            }
-//        }
+        supportFragmentManager.beginTransaction()
+            .replace(R.id.layout_fragment_container, homeFragment)
+            .commit()
+        bottom_navigation_view.selectedItemId = R.id.home_nav
+
+
+        bottom_navigation_view.setOnNavigationItemSelectedListener {
+            when (it.itemId) {
+                R.id.home_nav -> {
+                    supportFragmentManager.beginTransaction()
+                        .replace(R.id.layout_fragment_container, homeFragment)
+                        .commit()
+                    true
+                }
+                R.id.profile_nav -> {
+                    supportFragmentManager.beginTransaction()
+                        .replace(R.id.layout_fragment_container, profileFragment)
+                        .commit()
+                    true
+                }
+                R.id.curriculum_nav -> {
+                    supportFragmentManager.beginTransaction()
+                        .replace(R.id.layout_fragment_container, curriculumFragment)
+                        .commit()
+                    true
+                }
+                R.id.resources_nav -> {
+                    supportFragmentManager.beginTransaction()
+                        .replace(R.id.layout_fragment_container, resourcesFragment)
+                        .commit()
+                    true
+                }
+                else -> {
+                    false
+                }
+            }
+        }
 
     }
 
