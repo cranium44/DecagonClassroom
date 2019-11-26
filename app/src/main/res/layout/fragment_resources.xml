@@ -10,6 +10,12 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+        <include
+            layout="@layout/search_bar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
         <com.google.android.material.tabs.TabLayout
             android:id="@+id/resource_tab_layout"
             android:layout_width="wrap_content"
@@ -66,9 +72,11 @@
             android:id="@+id/textView9"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="TextView"
-            tools:layout_editor_absoluteX="71dp"
-            tools:layout_editor_absoluteY="49dp" />
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/resources"
+            app:layout_constraintBottom_toTopOf="@+id/resource_tab_layout"
+            app:layout_constraintStart_toStartOf="parent" />
 
         <ImageView
             android:id="@+id/imageView3"

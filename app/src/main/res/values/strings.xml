@@ -34,5 +34,8 @@
     <string name="videos">Videos</string>
     <string name="books">Books</string>
     <string name="resources">Resources</string>
+    <string name="curriculum">Curriculum</string>
+    <string name="profile">Profile</string>
+    <string name="home">Home</string>
     <string name="filter">filter</string>
 </resources>
