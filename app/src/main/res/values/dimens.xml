@@ -7,4 +7,7 @@
     <dimen name="default_padding">4dp</dimen>
     <dimen name="edit_text_padding">8dp</dimen>
     <dimen name="border_rad">50dp</dimen>
+    <dimen name="pageMargin">20dp</dimen>
+    <dimen name="offset">30dp</dimen>
+    <dimen name="pageMarginAndOffset">50dp</dimen>
 </resources>

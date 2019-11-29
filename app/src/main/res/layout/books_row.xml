@@ -10,6 +10,7 @@
     <androidx.cardview.widget.CardView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:padding="@dimen/default_padding"
         android:layout_gravity="center">
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -43,7 +44,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:text="TextView"
+                android:text="@string/books"
                 android:textColor="@color/errorColor"
                 app:layout_constraintEnd_toEndOf="@+id/book_title"
                 app:layout_constraintStart_toStartOf="@+id/book_title"
