@@ -4,8 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg_ver"
     tools:context=".VerificationActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_ver" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline3"
@@ -48,8 +53,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:elevation="2dp"
-        android:entries="@array/stacks"
-        android:prompt="@string/app_choose_stack"
+        android:spinnerMode="dropdown"
         app:layout_constraintEnd_toEndOf="@+id/textView6"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="@+id/textView6"

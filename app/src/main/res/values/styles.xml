@@ -28,6 +28,8 @@
         <item name="android:hint">Search...</item>
         <item name="android:textColorHint">@color/colorPrimary</item>
         <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:drawableStart">@drawable/search_icon</item>
+        <item name="android:drawableEnd">@drawable/microphone_black_shape</item>
     </style>
 
 

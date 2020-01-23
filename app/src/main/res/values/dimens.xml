@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="font_size_regular">13sp</dimen>
-    <dimen name="font_size_large">20sp</dimen>
+    <dimen name="font_size_regular">12sp</dimen>
+    <dimen name="font_size_large">14sp</dimen>
     <dimen name="landing_text_view_width">213dp</dimen>
     <dimen name="btn_width">201dp</dimen>
-    <dimen name="default_padding">8dp</dimen>
-    <dimen name="edit_text_padding">16dp</dimen>
+    <dimen name="default_padding">4dp</dimen>
+    <dimen name="edit_text_padding">8dp</dimen>
     <dimen name="border_rad">50dp</dimen>
+    <dimen name="pageMargin">20dp</dimen>
+    <dimen name="offset">30dp</dimen>
+    <dimen name="pageMarginAndOffset">50dp</dimen>
 </resources>

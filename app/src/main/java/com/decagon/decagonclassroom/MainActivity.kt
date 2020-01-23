@@ -26,6 +26,18 @@ class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemS
             CurriculumFragment()
         val resourcesFragment =
             ResourcesFragment()
+//        val navController = findNavController(R.id.layout_fragment_container)
+//        val appBarConfiguration = AppBarConfiguration.Builder(
+//            (mutableSetOf(
+//                R.id.homeFragment,
+//                R.id.curriculumFragment,
+//                R.id.resourcesFragment,
+//                R.id.profileFragment
+//            ))
+//        ).build()
+
+//        setupActionBarWithNavController(navController,appBarConfiguration)
+//        bottom_navigation_view.setupWithNavController(navController)
 
         supportFragmentManager.beginTransaction()
             .replace(R.id.layout_fragment_container, homeFragment)
